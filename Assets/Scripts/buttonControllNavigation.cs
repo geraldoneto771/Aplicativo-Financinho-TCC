@@ -13,5 +13,10 @@ public class buttonControllNavigation : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
   
 }
