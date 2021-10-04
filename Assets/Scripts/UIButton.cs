@@ -8,10 +8,13 @@ public class UIButton : MonoBehaviour
 
     public void OpenPanel()
     {
-        if(Panel != null)
+     
+        if((Panel != null)
         {
             bool isActive = Panel.activeSelf;
             Panel.SetActive(!isActive);
+            
         }
     }
+
 }
