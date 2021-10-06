@@ -5,8 +5,8 @@ using UnityEngine;
 public class UIButton : MonoBehaviour
 {
     public GameObject PanelMenu;
-
     public GameObject PanelMenuSobre;
+    public GameObject PanelMenuOpcoes;
 
 
     public void OpenPanelMenu()
@@ -38,6 +38,25 @@ public class UIButton : MonoBehaviour
         {
             PanelMenuSobre.SetActive(isActive);
                 PanelMenu.SetActive(!isActive);
+
+        }
+
+
+    }
+
+    public void OpenPanelOpcoes()
+    {
+        bool isActive = PanelMenuOpcoes.activeSelf;
+        if (PanelMenuOpcoes != null)
+        {
+            PanelMenuOpcoes.SetActive(!isActive);
+            PanelMenu.SetActive(isActive);
+
+        }
+        else
+        {
+            PanelMenuOpcoes.SetActive(isActive);
+            PanelMenu.SetActive(!isActive);
 
         }
 
