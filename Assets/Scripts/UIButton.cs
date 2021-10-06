@@ -4,17 +4,45 @@ using UnityEngine;
 
 public class UIButton : MonoBehaviour
 {
-    public GameObject Panel;
+    public GameObject PanelMenu;
 
-    public void OpenPanel()
+    public GameObject PanelMenuSobre;
+
+
+    public void OpenPanelMenu()
     {
-     
-        if((Panel != null)
+        bool isActive = PanelMenu.activeSelf;
+        if (PanelMenu != null)
         {
-            bool isActive = Panel.activeSelf;
-            Panel.SetActive(!isActive);
+            PanelMenu.SetActive(!isActive);
             
         }
+        else
+        {
+            PanelMenu.SetActive(isActive);
+
+        }
+
+
     }
+    
+    public void OpenPanelSobre()
+    {
+        bool isActive = PanelMenuSobre.activeSelf;
+        if (PanelMenuSobre != null)
+        {
+            PanelMenuSobre.SetActive(!isActive);
+            PanelMenu.SetActive(isActive);
+
+        } else
+        {
+            PanelMenuSobre.SetActive(isActive);
+                PanelMenu.SetActive(!isActive);
+
+        }
+
+
+    }
+
 
 }
