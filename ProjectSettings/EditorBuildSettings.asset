@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Tela_Introducao.unity
     guid: 18c77938e07c10a4ea40fa71fbe59b54
   - enabled: 1
-    path: Assets/Scenes/Tela_Aventura_Solo.unity
+    path: Assets/Scenes/Tela_Modulo_1.unity
     guid: 9845bfc5a09df8c40a26210484aad992
   - enabled: 1
     path: Assets/Scenes/Tela_Mini_Game.unity
