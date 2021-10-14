@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tela_Ferramenta_1.unity
     guid: e6c4718fa587fe348bfa6288884d32d8
+  - enabled: 1
+    path: Assets/Scenes/Fluid Ui Transitions.unity
+    guid: bee6ae83444c5ea48ba0aee1b5a4d482
   m_configObjects: {}
