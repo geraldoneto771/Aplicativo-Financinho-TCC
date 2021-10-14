@@ -1317,7 +1317,7 @@ GameObject:
   - component: {fileID: 597436962}
   - component: {fileID: 597436961}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3260,7 +3260,7 @@ GameObject:
   - component: {fileID: 1632484326}
   - component: {fileID: 1632484325}
   m_Layer: 0
-  m_Name: button_controller
+  m_Name: button_controller_navigation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3706,7 +3706,7 @@ GameObject:
   - component: {fileID: 2050854758}
   - component: {fileID: 2050854757}
   m_Layer: 0
-  m_Name: FINANCINHO
+  m_Name: Title_Nome_App
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
