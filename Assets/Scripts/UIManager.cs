@@ -6,23 +6,25 @@ using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
-    public RectTransform mainMenu, carShopMenu;
+    public RectTransform level_1_2, level_3_4;
+  
     // Start is called before the first frame update
     void Start()
     {
-        mainMenu.DOAnchorPos(Vector2.zero, 0.25f);
+        level_1_2.DOAnchorPos(Vector2.zero, 0.25f);
     }
 
     // Update is called once per frame
-    public void CarShopButton()
+    public void NextModuloButton()
     {
-        mainMenu.DOAnchorPos(new Vector2(-1884, 0), 0.25f);
-        carShopMenu.DOAnchorPos(new Vector2(0, 0), 0.25f);
+
+        level_1_2.DOAnchorPos(new Vector2(-2094, 0), 0.25f);
+        level_3_4.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
-    public void CloseCarShopButton()
+    public void CloseNextButtonButton()
     {
-        mainMenu.DOAnchorPos(new Vector2(0, 0), 0.25f);
-        carShopMenu.DOAnchorPos(new Vector2(1884, 0), 0.25f);
+        level_1_2.DOAnchorPos(new Vector2(0, 0), 0.25f);
+        level_3_4.DOAnchorPos(new Vector2(2207, 0), 0.25f);
     }
 
 }
