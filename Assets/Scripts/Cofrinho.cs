@@ -6,36 +6,23 @@ using TMPro;
 
 public class Cofrinho : MonoBehaviour
 {
-
-    public InputField inputMoney;
-    private int totalMoney = 0;
-    public Text textTotalCofre;
-    private int money;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-        textTotalCofre.text = "R$" + totalMoney.ToString();
-
-    }
+    private double valor;
+    public GameObject inputMoney;
+    public GameObject textTotalCofre;
 
     public void addMoney()
     {
+        valor += double.Parse(inputMoney.GetComponent<Text>().text);
+        textTotalCofre.GetComponent<Text>().text = "R$" + valor.ToString();
 
-        money = int.Parse(inputMoney.text);
-        totalMoney += money;
-        
     }
 
     public void quebrarCofre()
     {
-        totalMoney = 0;
-        
+        // totalMoney = 0;
+        valor = 0;
+        textTotalCofre.GetComponent<Text>().text = "R$" + valor.ToString();
+
     }
+
 }
