@@ -12,14 +12,22 @@ public class Cofrinho : MonoBehaviour
 
     public void addMoney()
     {
-        valor += double.Parse(inputMoney.GetComponent<Text>().text);
-        textTotalCofre.GetComponent<Text>().text = "R$" + valor.ToString();
+       
+        if ((double.Parse(inputMoney.GetComponent<Text>().text)) <= 0)
+        {
+            Debug.Log("Entre com um valor maior que zero!");
+        } 
+        else if ((double.Parse(inputMoney.GetComponent<Text>().text)) > 0)
+        {
+            valor += double.Parse(inputMoney.GetComponent<Text>().text);
+            textTotalCofre.GetComponent<Text>().text = "R$" + valor.ToString();
 
+        }
     }
 
     public void quebrarCofre()
     {
-        // totalMoney = 0;
+        
         valor = 0;
         textTotalCofre.GetComponent<Text>().text = "R$" + valor.ToString();
 
