@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using TMPro;
 using System;
 
 public class Cofrinho : MonoBehaviour
 {
     private double valor;
-    public GameObject inputMoney;
+    public InputField inputMoney;
     public GameObject textTotalCofre;
     public GameObject PanelTemCerteza;
     public GameObject PanelTemCertezaCofre;
@@ -47,34 +48,36 @@ public class Cofrinho : MonoBehaviour
 
 
     }
-
+   
     public void addMoney()
     {
         bool isActive = PanelTemCerteza.activeSelf;
 
         try
         {
-            if ((double.Parse(inputMoney.GetComponent<Text>().text)) <= 0)
+            if ((double.Parse(inputMoney.text)) <= 0)
             {
                 Debug.Log("Entre com um valor maior que zero!");
             }
-            else if ((double.Parse(inputMoney.GetComponent<Text>().text)) > 0)
+            else if ((double.Parse(inputMoney.text)) > 0)
             {
-                valor += double.Parse(inputMoney.GetComponent<Text>().text);
+                valor += double.Parse(inputMoney.text);
                 textTotalCofre.GetComponent<Text>().text = "R$" + valor.ToString();
 
+                
                 if (PanelTemCerteza != null)
                 {
                     PanelTemCerteza.SetActive(!isActive);
-
+                    inputMoney.text = "";
                 }
                 else
                 {
                     PanelTemCerteza.SetActive(isActive);
+                    
 
                 }
 
-
+                
             }
         }
         catch (Exception e)
@@ -91,7 +94,7 @@ public class Cofrinho : MonoBehaviour
         if (PanelTemCertezaCofre != null)
         {
             PanelTemCertezaCofre.SetActive(!isActive);
-
+            inputMoney.text = "";
         }
         else
         {
@@ -102,3 +105,5 @@ public class Cofrinho : MonoBehaviour
     }
 
 }
+
+// caso n de certo use -->   inputMoney.GetComponent<Text>().text

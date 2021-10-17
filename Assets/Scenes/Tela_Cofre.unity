@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec271d5792fbb2b46ac5361154105390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputMoney: {fileID: 850265214}
+  inputMoney: {fileID: 1938337140}
   textTotalCofre: {fileID: 147048879}
   PanelTemCerteza: {fileID: 1524300235}
   PanelTemCertezaCofre: {fileID: 903451275}
