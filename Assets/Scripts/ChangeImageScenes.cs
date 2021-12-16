@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeImageScenes : MonoBehaviour
 {
@@ -9,10 +10,11 @@ public class ChangeImageScenes : MonoBehaviour
     SpriteRenderer spriteRender;
    
 
-    int index = 0;
+    int index;
 
     void Start()
     {
+        index = 0;
         spriteRender = GetComponent<SpriteRenderer>();
         spriteRender.sprite = sprites[0];
     }
@@ -20,10 +22,23 @@ public class ChangeImageScenes : MonoBehaviour
     public void NextChangeImage()
     {
         index++;
+        
         spriteRender.sprite = sprites[index];
+      
+        
             
             
       
+        
+    }
+    public void LoadScene(string name)
+    {
+        if (index >= 25)
+        {
+            //Carregar cena de acordo com seu nome
+            SceneManager.LoadScene(name);
+        }
+
         
     }
 }
