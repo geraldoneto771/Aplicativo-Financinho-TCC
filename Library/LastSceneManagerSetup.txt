@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Tela_Aventura_1_m1.unity
+- path: Assets/Scenes/Rotas A solo 1/Rota01_AS_1_M1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

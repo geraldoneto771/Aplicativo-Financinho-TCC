@@ -10,6 +10,7 @@ public class AventuraSoloControle : MonoBehaviour
     SpriteRenderer spriteRender;
 
     int index;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,16 @@ public class AventuraSoloControle : MonoBehaviour
         spriteRender.sprite = sprites[index];
 
     }
-   
+
+    public void LoadScene(string name)
+    {
+        if (index >= 7)
+        {
+            //Carregar cena de acordo com seu nome
+            SceneManager.LoadScene(name);
+        }
+
+
+    }
+
 }
