@@ -24,12 +24,7 @@ public class ChangeImageScenes : MonoBehaviour
         index++;
         
         spriteRender.sprite = sprites[index];
-      
-        
-            
-            
-      
-        
+
     }
     public void LoadScene(string name)
     {
