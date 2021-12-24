@@ -29,7 +29,7 @@ public class AventuraSoloControle : MonoBehaviour
     {
         index++;
 
-        spriteRender.sprite = sprites[index];
+        
 
         if (index == 7)
         {
@@ -41,8 +41,17 @@ public class AventuraSoloControle : MonoBehaviour
             case 1:
                     InicioGame();
                     break;
+            case 4:
+                index = 8;
+                bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota4.DOAnchorPos(new Vector2(-703, 2601), 0.25f);
+                bttRota9.DOAnchorPos(new Vector2(-103, 2595), 0.25f);
+                bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
                 
+                break;
+
         }
+        spriteRender.sprite = sprites[index];
     }
 
    /* public void LoadScene(string name)
@@ -73,9 +82,11 @@ public class AventuraSoloControle : MonoBehaviour
     {
 
     }
-    public void RotaQuarto()
+    public void RotaQuarta()
     {
-
+        rotas = 4;
+        NextChangeImage();
+        
     }
     public void RotaQuinta()
     {
