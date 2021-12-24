@@ -283,18 +283,6 @@ MonoBehaviour:
           m_StringArgument: Tela_Modulo_1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 515689440}
-        m_TargetAssemblyTypeName: AventuraSoloControle, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Rota01_AS_1_M1
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &200110369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +405,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 515689440}
         m_TargetAssemblyTypeName: AventuraSoloControle, Assembly-CSharp
-        m_MethodName: NextChangeImage
+        m_MethodName: RotaNove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -425,18 +413,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Tela_Modulo_1
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 515689440}
-        m_TargetAssemblyTypeName: AventuraSoloControle, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Rota01_AS_1_M1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &341566308
@@ -517,6 +493,29 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6b6619070b73aae409b959ac90a1da69, type: 3}
   - {fileID: 21300000, guid: 36b23e51ef1b99d449318b88d0887b09, type: 3}
   - {fileID: 21300000, guid: 8626f9f74dde64643b4be90010a59598, type: 3}
+  - {fileID: 21300000, guid: 35328c574b1097c4792a439e4cf809e5, type: 3}
+  - {fileID: 21300000, guid: 2524a828134a4174d935fcfff5738212, type: 3}
+  - {fileID: 21300000, guid: c32c1afdbb9a03345ac0558091cb436f, type: 3}
+  - {fileID: 21300000, guid: 6ee81d1e67cb87548a24633d57b429d7, type: 3}
+  - {fileID: 21300000, guid: f4c1245b4bf510b49ad59bb2484a0703, type: 3}
+  - {fileID: 21300000, guid: e2816f21943c44145bbc8be8e57eaf7e, type: 3}
+  - {fileID: 21300000, guid: d44034ad373db0543a9d95f48c753b53, type: 3}
+  - {fileID: 21300000, guid: db16347eb17c2074f8eb9dc138ab77db, type: 3}
+  - {fileID: 21300000, guid: b3a21cd7de4ed39408883b2ce17ee913, type: 3}
+  - {fileID: 21300000, guid: 0b6e0f70ae6369e419d18e89f29a830f, type: 3}
+  - {fileID: 21300000, guid: 1ab8769ca7f2c4445afaab0362221aa4, type: 3}
+  - {fileID: 21300000, guid: d60cc428393d1b14e852d016d9434fe7, type: 3}
+  - {fileID: 21300000, guid: 2d6a7e8d6d1f15243b1a99ddbc3b763c, type: 3}
+  - {fileID: 21300000, guid: 361eaf0d58d4c024698794e43339dff4, type: 3}
+  - {fileID: 21300000, guid: 40745a7e2b89ed843a545cba29be49fe, type: 3}
+  - {fileID: 21300000, guid: ebaa087ccedd25e4e935a03931eff0af, type: 3}
+  - {fileID: 21300000, guid: 518a1dab8da99ec45b47fcd0ff9f20ab, type: 3}
+  - {fileID: 21300000, guid: 27efeb5c3f05166489b0ca6222f91c8c, type: 3}
+  - {fileID: 21300000, guid: 2c00ccf1675664c46b57c2aa5b3495d2, type: 3}
+  - {fileID: 21300000, guid: 63ff728b0ddb953479b26c96837d4d7b, type: 3}
+  - {fileID: 21300000, guid: f23c607e7d85539458867e8ae411c65f, type: 3}
+  - {fileID: 21300000, guid: 4a7c5b53cc89b3c4187c3464fcaf223c, type: 3}
+  - {fileID: 21300000, guid: 97e8403b7d96e674b8ebc3c9961985f1, type: 3}
   bttRota4: {fileID: 1559052423}
   bttRota9: {fileID: 341566306}
   bttRota12: {fileID: 914513153}
@@ -773,7 +772,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 515689440}
         m_TargetAssemblyTypeName: AventuraSoloControle, Assembly-CSharp
-        m_MethodName: NextChangeImage
+        m_MethodName: RotaDoze
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -781,18 +780,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Tela_Modulo_1
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 515689440}
-        m_TargetAssemblyTypeName: AventuraSoloControle, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Rota01_AS_1_M1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &914513155
