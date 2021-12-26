@@ -72,6 +72,22 @@ public class AventuraSoloControle : MonoBehaviour
             bttRota18.DOAnchorPos(new Vector2(586, -411), 0.25f);
 
         }
+        if (index == 78)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota19.DOAnchorPos(new Vector2(-545, -363), 0.25f);
+            bttRota22.DOAnchorPos(new Vector2(586, -363), 0.25f);
+            
+
+        }
+        if (index == 89)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota25.DOAnchorPos(new Vector2(-360, -253), 0.25f);
+            bttRota26.DOAnchorPos(new Vector2(385, -438), 0.25f);
+
+
+        }
 
         switch (rotas)
         {
@@ -125,7 +141,11 @@ public class AventuraSoloControle : MonoBehaviour
                 rotas = 0;
                 break;
             case 10:
+                index = 60;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota10.DOAnchorPos(new Vector2(-661, 2934), 0.25f);
+                bttRota15.DOAnchorPos(new Vector2(-87, 2934), 0.25f);
+                bttRota18.DOAnchorPos(new Vector2(586, 2934), 0.25f);
                 rotas = 0;
                 break;
             case 11:
@@ -156,7 +176,11 @@ public class AventuraSoloControle : MonoBehaviour
                 rotas = 0;
                 break;
             case 15:
+                index = 65;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota10.DOAnchorPos(new Vector2(-661, 2934), 0.25f);
+                bttRota15.DOAnchorPos(new Vector2(-87, 2934), 0.25f);
+                bttRota18.DOAnchorPos(new Vector2(586, 2934), 0.25f);
                 rotas = 0;
                 break;
             case 16:
@@ -171,11 +195,18 @@ public class AventuraSoloControle : MonoBehaviour
                 rotas = 0;
                 break;
             case 18:
+                index = 73;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota10.DOAnchorPos(new Vector2(-661, 2934), 0.25f);
+                bttRota15.DOAnchorPos(new Vector2(-87, 2934), 0.25f);
+                bttRota18.DOAnchorPos(new Vector2(586, 2934), 0.25f);
                 rotas = 0;
                 break;
             case 19:
+                index = 79;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota19.DOAnchorPos(new Vector2(-545, 3355), 0.25f);
+                bttRota22.DOAnchorPos(new Vector2(586, 3355), 0.25f);
                 rotas = 0;
                 break;
             case 20:
@@ -187,7 +218,10 @@ public class AventuraSoloControle : MonoBehaviour
                 rotas = 0;
                 break;
             case 22:
+                index = 85;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota19.DOAnchorPos(new Vector2(-545, 3355), 0.25f);
+                bttRota22.DOAnchorPos(new Vector2(586, 3355), 0.25f);
                 rotas = 0;
                 break;
             case 23:
@@ -199,11 +233,17 @@ public class AventuraSoloControle : MonoBehaviour
                 rotas = 0;
                 break;
             case 25:
+                index = 90;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota25.DOAnchorPos(new Vector2(-360, 3678), 0.25f);
+                bttRota26.DOAnchorPos(new Vector2(385, 3890), 0.25f);
                 rotas = 0;
                 break;
             case 26:
+                index = 94;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota25.DOAnchorPos(new Vector2(-360, 3678), 0.25f);
+                bttRota26.DOAnchorPos(new Vector2(385, 3890), 0.25f);
                 rotas = 0;
                 break;
         }
@@ -214,7 +254,7 @@ public class AventuraSoloControle : MonoBehaviour
 
     public void LoadScene(string name)
     {
-        if (index == 45)
+        if (index == 45 || index == 64 || index == 72 || index == 84 || index == 93 || index == 99)
         {
             //Carregar cena de acordo com seu nome
             SceneManager.LoadScene(name);
