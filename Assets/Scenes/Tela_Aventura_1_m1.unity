@@ -220,7 +220,7 @@ RectTransform:
   m_LocalScale: {x: 0.018736007, y: 0.018736007, z: 0.018736007}
   m_Children: []
   m_Father: {fileID: 577893321}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 341566308}
   - component: {fileID: 341566307}
   m_Layer: 5
-  m_Name: BttRota9
+  m_Name: BttRota09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -496,7 +496,7 @@ RectTransform:
   m_LocalScale: {x: 0.018736007, y: 0.018736007, z: 0.018736007}
   m_Children: []
   m_Father: {fileID: 577893321}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -628,7 +628,7 @@ RectTransform:
   m_LocalScale: {x: 0.018736007, y: 0.018736007, z: 0.018736007}
   m_Children: []
   m_Father: {fileID: 577893321}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -760,7 +760,7 @@ RectTransform:
   m_LocalScale: {x: 0.018736007, y: 0.018736007, z: 0.018736007}
   m_Children: []
   m_Father: {fileID: 577893321}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -892,7 +892,7 @@ RectTransform:
   m_LocalScale: {x: 0.018736007, y: 0.018736007, z: 0.018736007}
   m_Children: []
   m_Father: {fileID: 577893321}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1070,15 +1070,32 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3841e9a60dff7de4185f6e28abecbcb3, type: 3}
   - {fileID: 21300000, guid: bcbab76a18a0081418d06deb9b19b6b1, type: 3}
   - {fileID: 21300000, guid: bcbab76a18a0081418d06deb9b19b6b1, type: 3}
-  bttRota4: {fileID: 1559052423}
-  bttRota9: {fileID: 341566306}
-  bttRota12: {fileID: 914513153}
   bttNext: {fileID: 200110367}
-  bttRota08: {fileID: 374251229}
-  bttRota17: {fileID: 142078185}
-  bttRota11: {fileID: 1914711423}
+  bttRota02: {fileID: 0}
+  bttRota03: {fileID: 0}
+  bttRota4: {fileID: 1559052423}
   bttRota05: {fileID: 472285242}
+  bttRota06: {fileID: 0}
+  bttRota07: {fileID: 0}
+  bttRota08: {fileID: 374251229}
+  bttRota9: {fileID: 341566306}
+  bttRota10: {fileID: 0}
+  bttRota11: {fileID: 1914711423}
+  bttRota12: {fileID: 914513153}
+  bttNext13: {fileID: 0}
   bttRota14: {fileID: 494759376}
+  bttRota15: {fileID: 0}
+  bttRota16: {fileID: 0}
+  bttRota17: {fileID: 142078185}
+  bttRota18: {fileID: 0}
+  bttRota19: {fileID: 0}
+  bttRota20: {fileID: 0}
+  bttRota21: {fileID: 0}
+  bttRota22: {fileID: 0}
+  bttRota23: {fileID: 0}
+  bttRota24: {fileID: 0}
+  bttRota25: {fileID: 0}
+  bttRota26: {fileID: 0}
 --- !u!212 &515689441
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1237,13 +1254,13 @@ RectTransform:
   m_Children:
   - {fileID: 200110367}
   - {fileID: 1559052423}
-  - {fileID: 341566306}
-  - {fileID: 914513153}
-  - {fileID: 374251229}
-  - {fileID: 142078185}
-  - {fileID: 1914711423}
   - {fileID: 472285242}
+  - {fileID: 374251229}
+  - {fileID: 341566306}
+  - {fileID: 1914711423}
+  - {fileID: 914513153}
   - {fileID: 494759376}
+  - {fileID: 142078185}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1283,7 +1300,7 @@ RectTransform:
   m_LocalScale: {x: 0.018736007, y: 0.018736007, z: 0.018736007}
   m_Children: []
   m_Father: {fileID: 577893321}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1397,7 +1414,7 @@ GameObject:
   - component: {fileID: 1559052425}
   - component: {fileID: 1559052424}
   m_Layer: 5
-  m_Name: BttRota4
+  m_Name: BttRota04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1630,7 +1647,7 @@ RectTransform:
   m_LocalScale: {x: 0.018736007, y: 0.018736007, z: 0.018736007}
   m_Children: []
   m_Father: {fileID: 577893321}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
