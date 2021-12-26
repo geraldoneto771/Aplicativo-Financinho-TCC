@@ -57,6 +57,13 @@ public class AventuraSoloControle : MonoBehaviour
             bttRota14.DOAnchorPos(new Vector2(-523, -331), 0.25f);
 
         }
+        if (index == 54)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota03.DOAnchorPos(new Vector2(597, -339), 0.25f);
+            bttRota11.DOAnchorPos(new Vector2(-523, -331), 0.25f);
+
+        }
 
         switch (rotas)
         {
@@ -92,7 +99,10 @@ public class AventuraSoloControle : MonoBehaviour
                 rotas = 0;
                 break;
             case 8:
+                index = 46;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota08.DOAnchorPos(new Vector2(1190, 2632), 0.25f);
+                bttRota17.DOAnchorPos(new Vector2(1960, 2632), 0.25f);
                 rotas = 0;
                 break;
             case 9:
@@ -112,6 +122,7 @@ public class AventuraSoloControle : MonoBehaviour
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
                 bttRota08.DOAnchorPos(new Vector2(1190, 2632), 0.25f);
                 bttRota11.DOAnchorPos(new Vector2(-1538, 2632), 0.25f);
+                bttRota03.DOAnchorPos(new Vector2(-1366, 2632), 0.25f);
                 rotas = 0;
                 break;
             case 12:
