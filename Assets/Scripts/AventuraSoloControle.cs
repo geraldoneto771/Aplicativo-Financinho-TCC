@@ -11,9 +11,8 @@ public class AventuraSoloControle : MonoBehaviour
     public Sprite[] sprites;
     SpriteRenderer spriteRender;
     int rotas;
-
     int index;
-    public RectTransform bttRota4, bttRota9, bttRota12, bttNext, bttRota08, bttRota17;
+    public RectTransform bttRota4, bttRota9, bttRota12, bttNext, bttRota08, bttRota17, bttRota11, bttRota05, bttRota14;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +27,7 @@ public class AventuraSoloControle : MonoBehaviour
     public void NextChangeImage()
     {
         index++;
+   
 
         
 
@@ -41,6 +41,20 @@ public class AventuraSoloControle : MonoBehaviour
             bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
             bttRota08.DOAnchorPos(new Vector2(597, -339), 0.25f);
             bttRota17.DOAnchorPos(new Vector2(-523, -331), 0.25f);
+
+        }
+        if (index == 35)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota08.DOAnchorPos(new Vector2(597, -339), 0.25f);
+            bttRota11.DOAnchorPos(new Vector2(-523, -331), 0.25f);
+
+        }
+        if (index == 39)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota05.DOAnchorPos(new Vector2(597, -339), 0.25f);
+            bttRota14.DOAnchorPos(new Vector2(-523, -331), 0.25f);
 
         }
 
@@ -60,10 +74,17 @@ public class AventuraSoloControle : MonoBehaviour
             case 9:
                 index = 16;
                 
-                    bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
-                    bttRota4.DOAnchorPos(new Vector2(-703, 2601), 0.25f);
-                    bttRota9.DOAnchorPos(new Vector2(-103, 2595), 0.25f);
-                    bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
+                bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota4.DOAnchorPos(new Vector2(-703, 2601), 0.25f);
+                bttRota9.DOAnchorPos(new Vector2(-103, 2595), 0.25f);
+                bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
+                rotas = 0;
+                break;
+            case 11:
+                index = 36;
+                bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota08.DOAnchorPos(new Vector2(1190, 2632), 0.25f);
+                bttRota11.DOAnchorPos(new Vector2(-1538, 2632), 0.25f);
                 rotas = 0;
                 break;
             case 12:
@@ -74,22 +95,37 @@ public class AventuraSoloControle : MonoBehaviour
                 bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
                 rotas = 0;
                 break;
+            case 17:
+                index = 32;
+                bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota08.DOAnchorPos(new Vector2(1190, 2632), 0.25f);
+                bttRota17.DOAnchorPos(new Vector2(1960, 2632), 0.25f);
+                rotas = 0;
+                break;
+            case 14:
+                index = 40;
+                bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                bttRota05.DOAnchorPos(new Vector2(2656, 2632), 0.25f);
+                bttRota14.DOAnchorPos(new Vector2(3458, 2632), 0.25f);
+                rotas = 0;
+                break;
 
         }
         spriteRender.sprite = sprites[index];
         print(index);
+        
     }
 
-   /* public void LoadScene(string name)
+    public void LoadScene(string name)
     {
-        if (index >= 7)
+        if (index == 45)
         {
             //Carregar cena de acordo com seu nome
             SceneManager.LoadScene(name);
         }
 
 
-    }*/
+    }
 
     public void InicioGame()
     {
@@ -116,7 +152,8 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaQuinta()
     {
-
+        rotas = 5;
+        NextChangeImage();
     }
     public void RotaSexta()
     {
@@ -141,7 +178,8 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaOnze()
     {
-
+        rotas = 11;
+        NextChangeImage();
     }
     public void RotaDoze()
     {
@@ -154,7 +192,8 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaQuatorze()
     {
-
+        rotas = 14;
+        NextChangeImage();
     }
     public void RotaQuinze()
     {
@@ -166,7 +205,8 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaDezessete()
     {
-
+        rotas = 17;
+        NextChangeImage();
     }
     public void RotaDezoito()
     {
