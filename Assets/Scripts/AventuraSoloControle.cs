@@ -13,7 +13,7 @@ public class AventuraSoloControle : MonoBehaviour
     int rotas;
 
     int index;
-    public RectTransform bttRota4, bttRota9, bttRota12, bttNext;
+    public RectTransform bttRota4, bttRota9, bttRota12, bttNext, bttRota08, bttRota17;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,14 @@ public class AventuraSoloControle : MonoBehaviour
             rotas = 1;
         }
 
+        if (index == 23)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota08.DOAnchorPos(new Vector2(597, -339), 0.25f);
+            bttRota17.DOAnchorPos(new Vector2(-523, -331), 0.25f);
+
+        }
+
         switch (rotas)
         {
             case 1:
@@ -51,10 +59,11 @@ public class AventuraSoloControle : MonoBehaviour
                 break;
             case 9:
                 index = 16;
-                bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
-                bttRota4.DOAnchorPos(new Vector2(-703, 2601), 0.25f);
-                bttRota9.DOAnchorPos(new Vector2(-103, 2595), 0.25f);
-                bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
+                
+                    bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
+                    bttRota4.DOAnchorPos(new Vector2(-703, 2601), 0.25f);
+                    bttRota9.DOAnchorPos(new Vector2(-103, 2595), 0.25f);
+                    bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
                 rotas = 0;
                 break;
             case 12:
