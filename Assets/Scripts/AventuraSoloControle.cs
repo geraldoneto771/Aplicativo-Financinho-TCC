@@ -188,6 +188,7 @@ public class AventuraSoloControle : MonoBehaviour
                 bttRota02.DOAnchorPos(new Vector2(-631, 4083), 0.25f);
                 bttRota23.DOAnchorPos(new Vector2(660, 4083), 0.25f);
                 bttRota21.DOAnchorPos(new Vector2(596, 3565), 0.25f);
+                bttRota06.DOAnchorPos(new Vector2(1286, 3171), 0.25f);
                 rotas = 0;
                 break;
             case 3:
