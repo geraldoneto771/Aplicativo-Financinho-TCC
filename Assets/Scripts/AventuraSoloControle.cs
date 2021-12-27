@@ -36,7 +36,22 @@ public class AventuraSoloControle : MonoBehaviour
             rotas = 1;
         }
 
+        if (index == 15)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota08.DOAnchorPos(new Vector2(597, -339), 0.25f);
+            bttRota17.DOAnchorPos(new Vector2(-523, -331), 0.25f);
+
+        }
+
         if (index == 23)
+        {
+            bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
+            bttRota08.DOAnchorPos(new Vector2(597, -339), 0.25f);
+            bttRota17.DOAnchorPos(new Vector2(-523, -331), 0.25f);
+
+        }
+        if (index == 31)
         {
             bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
             bttRota08.DOAnchorPos(new Vector2(597, -339), 0.25f);
