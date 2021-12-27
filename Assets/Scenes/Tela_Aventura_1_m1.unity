@@ -224,7 +224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -631, y: 4098.596}
+  m_AnchoredPosition: {x: -631, y: 4113}
   m_SizeDelta: {x: 21948.59, y: 5833.785}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22791575
@@ -2399,7 +2399,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 515689440}
         m_TargetAssemblyTypeName: AventuraSoloControle, Assembly-CSharp
-        m_MethodName: RotaVinteSeis
+        m_MethodName: RotaSexta
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3191,7 +3191,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 515689440}
         m_TargetAssemblyTypeName: AventuraSoloControle, Assembly-CSharp
-        m_MethodName: RotaVinteSeis
+        m_MethodName: RotaVinteUm
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
