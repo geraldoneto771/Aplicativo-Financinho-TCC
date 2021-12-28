@@ -115,7 +115,7 @@ public class AventuraSoloControle : MonoBehaviour
         {
             bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
             bttRota02.DOAnchorPos(new Vector2(-631, -386), 0.25f);
-            bttRota23.DOAnchorPos(new Vector2(660, -386), 0.25f);
+            bttRota14.DOAnchorPos(new Vector2(660, -386), 0.25f);
 
 
         }
@@ -146,9 +146,9 @@ public class AventuraSoloControle : MonoBehaviour
         if (index == 128)
         {
             bttNext.DOAnchorPos(new Vector2(1204, -912), 0.25f);
-            bttRota15.DOAnchorPos(new Vector2(-87, -411), 0.25f);
-            bttRota22.DOAnchorPos(new Vector2(586, -363), 0.25f);
-            bttRota24.DOAnchorPos(new Vector2(-24, -363), 0.25f);
+            bttRota15.DOAnchorPos(new Vector2(-619, -411), 0.25f);
+            bttRota22.DOAnchorPos(new Vector2(614, -363), 0.25f);
+            bttRota24.DOAnchorPos(new Vector2(-10, -245), 0.25f);
 
 
         }
@@ -189,6 +189,7 @@ public class AventuraSoloControle : MonoBehaviour
                 bttRota23.DOAnchorPos(new Vector2(660, 4083), 0.25f);
                 bttRota21.DOAnchorPos(new Vector2(596, 3565), 0.25f);
                 bttRota06.DOAnchorPos(new Vector2(1286, 3171), 0.25f);
+                bttRota14.DOAnchorPos(new Vector2(3458, 2632), 0.25f);
                 rotas = 0;
                 break;
             case 3:
@@ -232,6 +233,7 @@ public class AventuraSoloControle : MonoBehaviour
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
                 bttRota08.DOAnchorPos(new Vector2(1190, 2632), 0.25f);
                 bttRota11.DOAnchorPos(new Vector2(-1538, 2632), 0.25f);
+                bttRota17.DOAnchorPos(new Vector2(1960, 2632), 0.25f);
                 rotas = 0;
                 break;
             case 9:
@@ -276,7 +278,7 @@ public class AventuraSoloControle : MonoBehaviour
             case 14:
                 index = 40;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
-                bttRota05.DOAnchorPos(new Vector2(2656, 2632), 0.25f);
+                bttRota02.DOAnchorPos(new Vector2(-631, 4083), 0.25f);
                 bttRota14.DOAnchorPos(new Vector2(3458, 2632), 0.25f);
                 rotas = 0;
                 break;
