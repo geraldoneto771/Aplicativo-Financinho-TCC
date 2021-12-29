@@ -2073,6 +2073,7 @@ MonoBehaviour:
   bttRota25: {fileID: 110153550}
   bttRota26: {fileID: 469152315}
   textOrcamento: {fileID: 1279552296}
+  textSaude: {fileID: 883897963}
 --- !u!212 &515689441
 SpriteRenderer:
   m_ObjectHideFlags: 0
