@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using System;
 
 public class AventuraSoloControle : MonoBehaviour
 {
@@ -205,14 +206,11 @@ public class AventuraSoloControle : MonoBehaviour
                 rotas = 0;
                 break;
             case 3:
+                
                 index = 100;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
                 bttRota11.DOAnchorPos(new Vector2(-1538, 2632), 0.25f);
                 bttRota03.DOAnchorPos(new Vector2(-1366, 2632), 0.25f);
-                if(orcamento >= 10)
-                {
-                    orcamento -= 10;
-                }
                 rotas = 0;
                 break;
             case 4:
@@ -221,11 +219,6 @@ public class AventuraSoloControle : MonoBehaviour
                 bttRota4.DOAnchorPos(new Vector2(-703, 2601), 0.25f);
                 bttRota9.DOAnchorPos(new Vector2(-103, 2595), 0.25f);
                 bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
-                if(orcamento >= 10)
-                {
-                    orcamento -= 10;
-                }
-                
                 rotas = 0;
                 break;
             case 5:
@@ -248,11 +241,8 @@ public class AventuraSoloControle : MonoBehaviour
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
                 bttRota07.DOAnchorPos(new Vector2(-660, 4556), 0.25f);
                 bttRota16.DOAnchorPos(new Vector2(660, 4697), 0.25f);
-                if (orcamento >= 15)
-                {
-                    orcamento -= 15;
-                }
                 rotas = 0;
+                
                 break;
             case 8:
                 index = 46;
@@ -270,6 +260,7 @@ public class AventuraSoloControle : MonoBehaviour
                 bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
                 rotas = 0;
                 break;
+           
             case 10:
                 index = 60;
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
@@ -440,14 +431,47 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaTres()
     {
-        rotas = 3;
-        NextChangeImage();
+
+        try
+        {
+            if (orcamento >= 10)
+            {
+                rotas = 3;
+                orcamento -= 10;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("Você não tenho dinheiro suficiente, escolha a outra opção!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
+
     }
     public void RotaQuarta()
     {
-        rotas = 4;
-        NextChangeImage();
-        
+
+        try
+        {
+            if (orcamento >= 10)
+            {
+                rotas = 4;
+                orcamento -= 10;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("Você não tenho dinheiro suficiente, escolha a outra opção!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
+
     }
     public void RotaQuinta()
     {
@@ -461,8 +485,26 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaSete()
     {
-        rotas = 7;
-        NextChangeImage();
+        
+
+        try
+        {
+            if (orcamento >= 15)
+            {
+                rotas = 7;
+                orcamento -= 15;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("Você não tenho dinheiro suficiente, escolha a outra opção!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
+
     }
     public void RotaOito()
     {
@@ -471,8 +513,26 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaNove()
     {
-        rotas = 9;
-        NextChangeImage();
+        try
+        {
+            if (orcamento >= 16)
+            {
+                rotas = 9;
+                orcamento -= 16;
+                NextChangeImage();
+                
+               
+            }
+            else
+            {
+                Debug.Log("Você não tenho dinheiro suficiente, escolha a outra opção!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
+
     }
     public void RotaDez()
     {
