@@ -13,6 +13,9 @@ public class AventuraSoloControle : MonoBehaviour
     int rotas;
     int index;
     public RectTransform bttNext, bttRota02, bttRota03, bttRota4, bttRota05, bttRota06, bttRota07, bttRota08, bttRota9, bttRota10, bttRota11, bttRota12, bttRota13, bttRota14, bttRota15, bttRota16, bttRota17, bttRota18, bttRota19, bttRota20, bttRota21, bttRota22, bttRota23, bttRota24, bttRota25, bttRota26;
+    public GameObject textOrcamento;
+    int forca = 3, agilidade = 2, rapidez = 3, saude = 5, pontoBonus = 3;
+    float orcamento = 25;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,10 @@ public class AventuraSoloControle : MonoBehaviour
         bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
         spriteRender = GetComponent<SpriteRenderer>();
         spriteRender.sprite = sprites[0];
+    }
+    void Update()
+    {
+        textOrcamento.GetComponent<Text>().text = "Orçamento: R$" + orcamento.ToString();
     }
 
     public void NextChangeImage()
@@ -197,6 +204,10 @@ public class AventuraSoloControle : MonoBehaviour
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
                 bttRota11.DOAnchorPos(new Vector2(-1538, 2632), 0.25f);
                 bttRota03.DOAnchorPos(new Vector2(-1366, 2632), 0.25f);
+                if(orcamento >= 10)
+                {
+                    orcamento -= 10;
+                }
                 rotas = 0;
                 break;
             case 4:
@@ -205,6 +216,11 @@ public class AventuraSoloControle : MonoBehaviour
                 bttRota4.DOAnchorPos(new Vector2(-703, 2601), 0.25f);
                 bttRota9.DOAnchorPos(new Vector2(-103, 2595), 0.25f);
                 bttRota12.DOAnchorPos(new Vector2(530, 2624), 0.25f);
+                if(orcamento >= 10)
+                {
+                    orcamento -= 10;
+                }
+                
                 rotas = 0;
                 break;
             case 5:
@@ -226,6 +242,10 @@ public class AventuraSoloControle : MonoBehaviour
                 bttNext.DOAnchorPos(new Vector2(814, -469), 0.25f);
                 bttRota07.DOAnchorPos(new Vector2(-660, 4556), 0.25f);
                 bttRota16.DOAnchorPos(new Vector2(660, 4697), 0.25f);
+                if (orcamento >= 15)
+                {
+                    orcamento -= 15;
+                }
                 rotas = 0;
                 break;
             case 8:
