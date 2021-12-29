@@ -13,7 +13,7 @@ public class AventuraSoloControle : MonoBehaviour
     int rotas;
     int index;
     public RectTransform bttNext, bttRota02, bttRota03, bttRota4, bttRota05, bttRota06, bttRota07, bttRota08, bttRota9, bttRota10, bttRota11, bttRota12, bttRota13, bttRota14, bttRota15, bttRota16, bttRota17, bttRota18, bttRota19, bttRota20, bttRota21, bttRota22, bttRota23, bttRota24, bttRota25, bttRota26;
-    public GameObject textOrcamento, textSaude;
+    public GameObject textOrcamento, textSaude, textForca, textAgilidade, textRapidez, textBonus;
     int forca = 3, agilidade = 2, rapidez = 3, saude = 5, pontoBonus = 3;
     float orcamento = 25;
 
@@ -29,7 +29,11 @@ public class AventuraSoloControle : MonoBehaviour
     void Update()
     {
         textOrcamento.GetComponent<Text>().text = "Orçamento: R$" + orcamento.ToString();
-        textSaude.GetComponent<Text>().text = "Saúde: R$" + saude.ToString();
+        textSaude.GetComponent<Text>().text = "Saúde: " + saude.ToString();
+        textForca.GetComponent<Text>().text = "Força: " + forca.ToString();
+        textAgilidade.GetComponent<Text>().text = "Agilidade: " + agilidade.ToString();
+        textRapidez.GetComponent<Text>().text = "Rapidez: " + rapidez.ToString();
+        textBonus.GetComponent<Text>().text = "Ponto de Bônus: " + pontoBonus.ToString();
     }
 
     public void NextChangeImage()
@@ -556,4 +560,37 @@ public class AventuraSoloControle : MonoBehaviour
         NextChangeImage();
     }
 
+
+    public void AddPontosForca()
+    {
+        if(pontoBonus >= 1 && pontoBonus < 4)
+        {
+            forca += 1;
+            pontoBonus -= 1;
+        }
+    }
+    public void AddPontosAgilidade()
+    {
+        if (pontoBonus >= 1 && pontoBonus  < 4)
+        {
+            agilidade += 1;
+            pontoBonus -= 1;
+        }
+    }
+    public void AddPontosRapidez()
+    {
+        if (pontoBonus >= 1 && pontoBonus  < 4)
+        {
+            rapidez += 1;
+            pontoBonus -= 1;
+        }
+    }
+    public void AddPontosSaude()
+    {
+        if (pontoBonus >= 1 && pontoBonus  < 4)
+        {
+            saude += 1;
+            pontoBonus -= 1;
+        }
+    }
 }
