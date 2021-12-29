@@ -426,8 +426,24 @@ public class AventuraSoloControle : MonoBehaviour
 
     public void RotaDois()
     {
-        rotas = 2;
-        NextChangeImage();
+        try
+        {
+            if (forca >= 3 && agilidade >= 3)
+            {
+                rotas = 2;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("Sua força não é o suficiente, escolha a outra opção ou verifique se consegue aumentar sua pontuação!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
+
+
     }
     public void RotaTres()
     {
@@ -475,8 +491,22 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaQuinta()
     {
-        rotas = 5;
-        NextChangeImage();
+        try
+        {
+            if (agilidade >= 3)
+            {
+                rotas = 5;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("Sua força não é o suficiente, escolha a outra opção ou verifique se consegue aumentar sua pontuação!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
     }
     public void RotaSexta()
     {
@@ -576,14 +606,30 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaDezoito()
     {
-        rotas = 18;
-        NextChangeImage();
+        try
+        {
+            if ((forca + agilidade ) > = 6)
+            {
+                rotas = 18;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("A soma da força + agilidade não é o suficiente, escolha a outra opção ou verifique se consegue aumentar sua pontuação!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
     }
     public void RotaDezonove()
     {
+
         rotas = 19;
         NextChangeImage();
     }
+        
     public void RotaVinte()
     {
         rotas = 20;
@@ -596,8 +642,23 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaVinteDois()
     {
-        rotas = 22;
-        NextChangeImage();
+        try
+        {
+            if (rapidez >= 4)
+            {
+                rotas = 22;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("Sua rapidez não é o suficiente, escolha a outra opção ou verifique se consegue aumentar sua pontuação!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
+
     }
     public void RotaVinteTres()
     {
@@ -606,8 +667,22 @@ public class AventuraSoloControle : MonoBehaviour
     }
     public void RotaVinteQuatro()
     {
-        rotas = 24;
-        NextChangeImage();
+        try
+        {
+            if ((forca + agilidade) > = 6)
+            {
+                rotas = 24;
+                NextChangeImage();
+            }
+            else
+            {
+                Debug.Log("A soma da força + agilidade não é o suficiente, escolha a outra opção ou verifique se consegue aumentar sua pontuação!");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ERRO!");
+        }
     }
     public void RotaVinteCinco()
     {
