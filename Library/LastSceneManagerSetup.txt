@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Tela_Aventura_1_m1.unity
+- path: Assets/Scenes/Tela_Conversor.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

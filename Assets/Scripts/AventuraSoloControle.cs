@@ -608,7 +608,7 @@ public class AventuraSoloControle : MonoBehaviour
     {
         try
         {
-            if ((forca + agilidade ) > = 6)
+            if ((forca + agilidade ) >= 6)
             {
                 rotas = 18;
                 NextChangeImage();
@@ -669,7 +669,7 @@ public class AventuraSoloControle : MonoBehaviour
     {
         try
         {
-            if ((forca + agilidade) > = 6)
+            if ((forca + agilidade) >= 6)
             {
                 rotas = 24;
                 NextChangeImage();
