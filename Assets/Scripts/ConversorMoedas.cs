@@ -72,7 +72,7 @@ public class ConversorMoedas : MonoBehaviour
                             valor = double.Parse(inputMoney.text);
                             
 
-                            resultado = valor * dolar;
+                            resultado = valor / dolar;
                             textTotalCofre.GetComponent<Text>().text = "R$" + resultado.ToString("C2");
 
 
