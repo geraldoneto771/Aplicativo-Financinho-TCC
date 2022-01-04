@@ -5522,6 +5522,8 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Dolar
       m_Image: {fileID: 0}
+    - m_Text: Euro
+      m_Image: {fileID: 0}
     - m_Text: Libra
       m_Image: {fileID: 0}
   m_OnValueChanged:

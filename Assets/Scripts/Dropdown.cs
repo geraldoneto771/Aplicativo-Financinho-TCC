@@ -48,6 +48,12 @@ public class Dropdown : MonoBehaviour
             verificador = 2;
             print(verificador);
         }
+        if (val == 3)
+        {
+
+            verificador = 3;
+            print(verificador);
+        }
     }
 
 
@@ -163,6 +169,73 @@ public class Dropdown : MonoBehaviour
 
                                 resultado = valor / dolar;
                                 textTotalCofre.GetComponent<Text>().text = string.Format(CultureInfo.GetCultureInfo("fr-FR"), "{0:C}", resultado);
+
+
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            Debug.Log("Entre com um valor!");
+                        }
+
+
+
+                    }
+                    else
+                    {
+                        cotacaoDolar = "-";
+                        print(cotacaoDolar);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    cotacaoDolar = "erro";
+
+                    Debug.Log(ex);
+                    print(cotacaoDolar);
+                }
+            }
+
+
+        }
+
+        if (verificador == 3)
+        {
+
+            string strURL = "https://api.hgbrasil.com/finance?array_limit=1&fields=only_results,GBP&key=c1eae02f";
+
+            using (HttpClient client = new HttpClient())
+            {
+
+                try
+                {
+                    var response = client.GetAsync(strURL).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var result = response.Content.ReadAsStringAsync().Result;
+
+                        Market market = JsonConvert.DeserializeObject<Market>(result);
+
+                        //cotacaoDolar = (market.Currency.Buy);
+                        //cotacaoDolar = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", market.Currency.Buy);
+                        print(market.Currency.Buy);
+
+                        dolar = (float)market.Currency.Buy;
+
+
+                        try
+                        {
+                            if ((double.Parse(inputMoney.text)) <= 0)
+                            {
+                                Debug.Log("Entre com um valor maior que zero!");
+                            }
+                            else if ((double.Parse(inputMoney.text)) > 0)
+                            {
+                                valor = double.Parse(inputMoney.text);
+
+
+                                resultado = valor / dolar;
+                                textTotalCofre.GetComponent<Text>().text = string.Format(CultureInfo.GetCultureInfo("en-GB"), "{0:C}", resultado);
 
 
                             }
