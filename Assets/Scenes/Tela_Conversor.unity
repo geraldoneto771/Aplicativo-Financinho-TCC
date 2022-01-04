@@ -5526,6 +5526,10 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Libra
       m_Image: {fileID: 0}
+    - m_Text: Iene
+      m_Image: {fileID: 0}
+    - m_Text: Peso
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
