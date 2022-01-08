@@ -2,11 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AcessoInternet
-    - AudioManager
+    - Audio
     - AventuraSoloControle
+    - BackgroundMusic
     - ChangeImageScenes
     - Cofrinho
-    - ControleDosBotoesDosNiveis
     - ConversorMoedas
     - Dropdown
     - UIButton
@@ -63,106 +63,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Fluid Ui Transitions.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1514}
-    - Class: 114
-      Script: {instanceID: 1900}
-    - Class: 114
-      Script: {instanceID: 2756}
-    - Class: 114
-      Script: {instanceID: 2928}
-    - Class: 114
-      Script: {instanceID: 2976}
-    - Class: 114
-      Script: {instanceID: 3168}
-    - Class: 114
-      Script: {instanceID: 3428}
-    - Class: 114
-      Script: {instanceID: 3554}
-    - Class: 114
-      Script: {instanceID: 5888}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Rotas A solo 1/Rota01_AS_1_M1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1514}
-    - Class: 114
-      Script: {instanceID: 2756}
-    - Class: 114
-      Script: {instanceID: 2928}
-    - Class: 114
-      Script: {instanceID: 3168}
-    - Class: 114
-      Script: {instanceID: 3428}
-    - Class: 114
-      Script: {instanceID: 3554}
-    - Class: 114
-      Script: {instanceID: 4718}
-    - Class: 114
-      Script: {instanceID: 5578}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
     Assets/Scenes/Tela_Aventura_1_m1.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -177,6 +77,10 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -199,9 +103,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3958}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 5578}
+      Script: {instanceID: 3960}
+    - Class: 114
+      Script: {instanceID: 4308}
+    - Class: 114
+      Script: {instanceID: 5580}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -220,48 +128,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Tela_Aventura_2_m1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 3640}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    Assets/Scenes/Tela_Aventura_3_m1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 3640}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
     Assets/Scenes/Tela_Cofre.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -276,6 +142,10 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -300,11 +170,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3958}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 4152}
+      Script: {instanceID: 3960}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4154}
+    - Class: 114
+      Script: {instanceID: 4308}
+    - Class: 114
+      Script: {instanceID: 4720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -337,6 +211,10 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -373,17 +251,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3958}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 4632}
+      Script: {instanceID: 3960}
     - Class: 114
-      Script: {instanceID: 4660}
+      Script: {instanceID: 4308}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4634}
     - Class: 114
-      Script: {instanceID: 4848}
+      Script: {instanceID: 4662}
     - Class: 114
-      Script: {instanceID: 19094}
+      Script: {instanceID: 4720}
+    - Class: 114
+      Script: {instanceID: 4850}
+    - Class: 114
+      Script: {instanceID: 5956}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -401,27 +283,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Tela_Ferramenta_1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 3640}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
       Script: {instanceID: 0}
     Assets/Scenes/Tela_Inicial.unity:
     - Class: 1
@@ -469,21 +330,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3958}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 3960}
     - Class: 114
-      Script: {instanceID: 4350}
+      Script: {instanceID: 4028}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4308}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4720}
     - Class: 114
-      Script: {instanceID: 4988}
+      Script: {instanceID: 4826}
     - Class: 114
-      Script: {instanceID: 5394}
+      Script: {instanceID: 4990}
     - Class: 114
-      Script: {instanceID: 5888}
+      Script: {instanceID: 5396}
+    - Class: 114
+      Script: {instanceID: 5890}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -517,6 +380,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -534,7 +401,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3880}
+      Script: {instanceID: 3742}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 4308}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -551,48 +422,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Tela_Introducao_2_m1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 3640}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    Assets/Scenes/Tela_Introducao_3_m1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 3640}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
     Assets/Scenes/Tela_Modulo_1.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -608,6 +437,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -615,9 +448,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1594}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2320}
     - Class: 114
-      Script: {instanceID: 2842}
+      Script: {instanceID: 2756}
     - Class: 114
       Script: {instanceID: 2928}
     - Class: 114
@@ -629,12 +462,16 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3958}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 3960}
     - Class: 114
-      Script: {instanceID: 5888}
+      Script: {instanceID: 4308}
+    - Class: 114
+      Script: {instanceID: 4720}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1025,6 +862,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackgroundMusic
+  - hash:
+      serializedVersion: 2
       Hash: bd3f0ca738703903e759f77536ed74fd
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1157,6 +1000,12 @@ ScriptsOnlyBuild:
     className: TMP_TextEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 054e18ee259cb86478f9fb58783bf6e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Audio
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1167,12 +1016,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 03f5d436d25128f8d21870058429f315
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioManager
   - hash:
       serializedVersion: 2
       Hash: 87cef3c82381dc586f6772c3e27561b6
@@ -1487,6 +1330,12 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
+      Hash: 223317380b2fbe255bac7847ff759e64
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AcessoInternet
+  - hash:
+      serializedVersion: 2
       Hash: 762a30c8d779b11af16ed9ce1f2d32fa
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
@@ -1497,25 +1346,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
-  - hash:
-      serializedVersion: 2
-      Hash: 223317380b2fbe255bac7847ff759e64
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AcessoInternet
   platform: 13
   scenePathNames:
   - Assets/Scenes/Tela_Inicial.unity
   - Assets/Scenes/Tela_Modulo_1.unity
   - Assets/Scenes/Tela_Cofre.unity
   - Assets/Scenes/Tela_Conversor.unity
-  - Assets/Scenes/Tela_Ferramenta_1.unity
-  - Assets/Scenes/Fluid Ui Transitions.unity
   - Assets/Scenes/Tela_Aventura_1_m1.unity
-  - Assets/Scenes/Tela_Aventura_2_m1.unity
-  - Assets/Scenes/Tela_Aventura_3_m1.unity
   - Assets/Scenes/Tela_Introducao_1_m1.unity
-  - Assets/Scenes/Tela_Introducao_2_m1.unity
-  - Assets/Scenes/Tela_Introducao_3_m1.unity
-  - Assets/Scenes/Rotas A solo 1/Rota01_AS_1_M1.unity
-  playerPath: D:/Aplicativo Financinho Oficial/APK FINANCINHO/teste007.apk
+  playerPath: D:/Aplicativo Financinho Oficial/APK FINANCINHO/teste008.apk

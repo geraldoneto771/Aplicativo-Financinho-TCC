@@ -400,7 +400,7 @@ public class AventuraSoloControle : MonoBehaviour
                 break;
         }
         spriteRender.sprite = sprites[index];
-        print(index);
+        
         
     }
 
