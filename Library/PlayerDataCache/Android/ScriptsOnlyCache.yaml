@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AcessoInternet
     - AudioManager
     - AventuraSoloControle
     - ChangeImageScenes
@@ -18,6 +19,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -380,6 +382,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4718}
     - Class: 114
       Script: {instanceID: 4848}
+    - Class: 114
+      Script: {instanceID: 19094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1493,6 +1497,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 223317380b2fbe255bac7847ff759e64
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AcessoInternet
   platform: 13
   scenePathNames:
   - Assets/Scenes/Tela_Inicial.unity
@@ -1508,4 +1518,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Tela_Introducao_2_m1.unity
   - Assets/Scenes/Tela_Introducao_3_m1.unity
   - Assets/Scenes/Rotas A solo 1/Rota01_AS_1_M1.unity
-  playerPath: D:/Aplicativo Financinho Oficial/APK FINANCINHO/teste005.apk
+  playerPath: D:/Aplicativo Financinho Oficial/APK FINANCINHO/teste007.apk
