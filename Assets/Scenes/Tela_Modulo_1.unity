@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 29328183}
         m_TargetAssemblyTypeName: Audio, Assembly-CSharp
         m_MethodName: OnButtonPress
         m_Mode: 1
