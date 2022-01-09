@@ -19,11 +19,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -354,8 +351,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1354,4 +1349,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Tela_Conversor.unity
   - Assets/Scenes/Tela_Aventura_1_m1.unity
   - Assets/Scenes/Tela_Introducao_1_m1.unity
-  playerPath: D:/Aplicativo Financinho Oficial/APK FINANCINHO/teste008.apk
+  playerPath: D:/Aplicativo Financinho Oficial/APK FINANCINHO/teste009.apk
