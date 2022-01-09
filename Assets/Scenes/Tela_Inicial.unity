@@ -428,7 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PanelMenu: {fileID: 1191996055}
   PanelMenuSobre: {fileID: 1904381642}
-  PanelMenuOpcoes: {fileID: 0}
+  PanelMenuOpcoes: {fileID: 1904381642}
 --- !u!114 &146843244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 146843243}
         m_TargetAssemblyTypeName: UIButton, Assembly-CSharp
-        m_MethodName: OpenPanelSobre
+        m_MethodName: OpenPanelOpcoes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3875,7 +3875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PanelMenu: {fileID: 1191996055}
   PanelMenuSobre: {fileID: 171840924}
-  PanelMenuOpcoes: {fileID: 0}
+  PanelMenuOpcoes: {fileID: 1904381642}
 --- !u!1 &1721208957
 GameObject:
   m_ObjectHideFlags: 0
